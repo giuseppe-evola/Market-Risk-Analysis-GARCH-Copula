@@ -94,7 +94,7 @@ ks_table_pvalues <- data.frame(ks_p_WAB = ks_test_WAB$p.value,   # p-value <0.05
                                ks_p_ABBV = ks_test_ABBV$p.value)
 
 
-# Heteroskedasticity:  (eventualmente prova a dfare test arch)
+# Heteroskedasticity: 
 # 1. we can see it from the visualization of returns above
 
 par(mfrow = c(2, 2))
