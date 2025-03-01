@@ -1,1 +1,1 @@
-# Market-Risk-Assessment-A-Comprehensive-Analysis-of-VaR-ES-and-GARCH-Models
+# GARCH-Based Market Risk Modeling for a Multi-Asset Portfolio
