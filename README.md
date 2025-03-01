@@ -30,3 +30,9 @@ This project implements an advanced market risk model for a trading desk managin
   - **FHS with GARCH filtering**
   - **Monte Carlo Simulation with Copula modeling**
 - Computed **daily portfolio VaR (99%)** and **regulatory capital**.
+
+
+## Tools and Data
+
+The analysis was conducted using the R programming language.  
+The file `market_risk_analysis.R` contains the code, while `market_risk.RData` holds the data.
