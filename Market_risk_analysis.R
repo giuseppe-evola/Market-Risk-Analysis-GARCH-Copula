@@ -343,7 +343,7 @@ ES97.5_ABBV_FHS <- numeric(n_days)   # ES simulated
 VaR97.5_ABBV_FHS <- numeric(n_days)
 
 for (i in 1:n_days) {
-  simulated_returns_ABBV[, i] <- vol_t_ABBV[i] * res_ABBV  # poduct between the volatility at each day times the residuals for all the serie
+  simulated_returns_ABBV[, i] <- vol_t_ABBV[i] * res_ABBV  # product between the volatility at each day times the residuals for all the serie
   
   VaR95_ABBV_FHS[i] <- -quantile(simulated_returns_ABBV[, i], 0.05) * 100
   VaR97.5_ABBV_FHS[i] <- -quantile(simulated_returns_ABBV[, i], 0.025) * 100
@@ -468,9 +468,7 @@ lines(date, -ES97.5_ABBV_FHS/100, col = "green", lwd = 2)                   # ES
 par(mfrow = c(1, 1))
 
 # ---------
-# Conduct a backtesting analysis of the different methods. Do you obseve
-# a superiority of some methods over others? How do you explain
-# these differences in terms of performance
+# Conduct a backtesting analysis of the different methods.
 
 # VaR 
 
@@ -534,8 +532,7 @@ U_table <- coredata(cbind(U_WAB, U_BEN, U_ES, U_ABBV))
 
 #----------
 #Estimate at least two different copula models from the 4-dimensional
-#vectors of pseudo-observations. Report the estimated parameters and
-#discuss them briefly. Which copula fits best your data? Why?
+#vectors of pseudo-observations. 
 
 fit.normalCopula <- fitCopula(normalCopula(dim = 4),  data = U_table)
 fit.tCopula <- fitCopula(tCopula(dim = 4), data = U_table) 
@@ -696,8 +693,7 @@ lines(out_sample_dates, VaR99_MC_10day, col = "red")
 #------------
 #Starting at day 61 of your forecasts, compute the trading book regulatory
 # capital for both methods, assuming k = 3.5 and c = 0 (see formula
-#in the course). Which model would you prefer as a risk manager? Explain briefly
-
+#in the course). 
 k <- 3.5
 scaling_factor <- sqrt(10)
 VaR99_FHS_RW_10day <- VaR99_FHS_RW * scaling_factor
