@@ -10,8 +10,8 @@ This project implements an advanced market risk model for a trading desk managin
 - Analyzed heteroscedasticity & normality using statistical tests.  
 
 ### 2. GARCH Modeling
-- Estimated and compared three GARCH models: **GARCH(1,1)**, **GJR-GARCH**, and **EGARCH**.  
-- Selected the best model per stock based on **AIC/BIC** criteria.  
+- Estimated and compared different GARCH models 
+- Selected the best model per stock based on **BIC** criteria.  
 
 ### 3. VaR & Expected Shortfall (ES) Estimation
 - Used three different methods to compute in-sample **VaR (95%)** and **ES (97.5%)**:
